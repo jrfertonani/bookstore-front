@@ -1,6 +1,7 @@
 .conteiner{
   height: 85%;
 
+
 }
 
 i {
@@ -10,4 +11,10 @@ i {
 
 .material-icons{
   align-items: center;
+
 }
+
+.mat-sidenav{
+  width: 250px;
+}
+

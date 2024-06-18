@@ -12,6 +12,7 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './components/views/home/home.component';
 import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
+import { CategoriaComponent } from './components/views/categoria/categoria/categoria.component';
 
 
 
@@ -21,7 +22,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
-import { CategoriaComponent } from './components/views/categoria/categoria/categoria.component';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -44,7 +45,8 @@ import { CategoriaComponent } from './components/views/categoria/categoria/categ
     MatIconModule,
     MatCardModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
   ],
   providers: [
     provideAnimationsAsync()
