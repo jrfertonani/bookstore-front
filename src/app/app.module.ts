@@ -14,6 +14,8 @@ import { HomeComponent } from './components/views/home/home.component';
 import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
 import { CategoriaComponent } from './components/views/categoria/categoria/categoria.component';
 import { CategoriaCreateComponent } from './components/views/categoria/categoria-create/categoria-create.component';
+import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
+import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 
 
 
@@ -39,7 +41,9 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     HomeComponent,
     CategoriaReadComponent,
     CategoriaComponent,
-    CategoriaCreateComponent
+    CategoriaCreateComponent,
+    CategoriaDeleteComponent,
+    CategoriaUpdateComponent
   ],
   imports: [
     BrowserModule,
