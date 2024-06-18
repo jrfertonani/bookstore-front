@@ -6,7 +6,7 @@
 <div class="tablemaster">
 
 
-  <button class="mat-elevation-z8" mat-stroked-button disabled>Nova Categoria</button>
+  <button class="mat-elevation-z8" (click)="navegarParaCategoriaCreate()" mat-button>Nova Categoria</button>
 
 
 <div class="mat-elevation-z8">
@@ -35,7 +35,6 @@
         </a>
       </td>
     </ng-container>
-
 
     <ng-container matColumnDef="acoes">
       <th mat-header-cell *matHeaderCellDef> Ações </th>
