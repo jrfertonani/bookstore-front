@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { LivroService } from '../livro.service';
-import { ActivatedRoute, Route, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Livro } from '../livro.model';
 
+
 @Component({
-  selector: 'app-livro-delete',
-  templateUrl: './livro-delete.component.html',
-  styleUrl: './livro-delete.component.css'
+  selector: 'app-livro-read',
+  templateUrl: './livro-read.component.html',
+  styleUrl: './livro-read.component.css'
 })
-export class LivroDeleteComponent {
+export class LivroReadComponent implements OnInit{
 
   id_cat: String = ''
 
@@ -41,23 +42,6 @@ export class LivroDeleteComponent {
       this.livro = resposta
     })
   }
-
-
-  delete(): void{
-    this.service.delete(this.livro.id!).subscribe(() => {
-      this.router.navigate([`categorias/${this.id_cat}/livros`]);
-      this.service.mensagem('Livro deletado com sucesso!')
-    },err => {
-      this.router.navigate([`categorias/${this.id_cat}/livros`]);
-      this.service.mensagem('Ouve falha ao deletadocom livro, tente mais tarde!')
-    })
-  }
-
-  getMessage(){
-    return false;
-  };
-
-
 
 
 }
